@@ -1,11 +1,34 @@
 body {
-
+    margin: 0;
 }
 
 header{
     font-size: x-large;
     background-color: RGB(252, 169, 29);
 }
-.nav-link:hover {
+.nav-link:hover, .nav-link:hover svg {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: color 0.8s ease;
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+
+.form-container {
+    justify-content: center; /* Horizontálne centrovanie */
+    align-items: center;
+    padding: 20px;
+    background-color: RGB(255, 210, 128);
+    border-radius: 20px;
+}
+
+.btn {
+    background-color: RGB(252, 169, 29);
+    border: none;
+}
+.btn:hover {
+    background-color: darkgoldenrod;
+}
+footer {
+    background-color: RGB(252, 169, 29);
+    padding: 0 10px 0 10px;
 }
