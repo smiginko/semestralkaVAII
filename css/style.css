@@ -1,10 +1,16 @@
+:root {
+    --main-color: RGB(252, 169, 29);
+    --background-color: bisque;
+}
+
 body {
     margin: 0;
+    background-color: var(--background-color);
 }
 
 header{
     font-size: x-large;
-    background-color: RGB(252, 169, 29);
+    background-color: var(--main-color);
 }
 .nav-link:hover, .nav-link:hover svg {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -18,17 +24,17 @@ header{
     align-items: center;
     padding: 20px;
     background-color: RGB(255, 210, 128);
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .btn {
-    background-color: RGB(252, 169, 29);
+    background-color: var(--main-color);
     border: none;
 }
 .btn:hover {
     background-color: darkgoldenrod;
 }
 footer {
-    background-color: RGB(252, 169, 29);
+    background-color: var(--main-color);
     padding: 0 10px 0 10px;
 }
