@@ -1,0 +1,101 @@
+:root {
+    --main-color: RGB(252, 169, 29);
+    --background-color: bisque;
+}
+body {
+    margin: 0;
+    background-image: url("images/background.jpg");
+}
+.background{
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.background::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color); /* sem vlož svoju farbu */
+    mix-blend-mode: color; /* zmiešavací režim, ktorý urobí obrázok jednofarebný */
+    z-index: -100;
+}
+header{
+    font-size: x-large;
+    background: linear-gradient(to top, rgba(252, 169, 29, 0) 0%, rgba(252, 169, 29, 1) 100%);
+    position: sticky;
+    top: 0;
+}
+
+h1{
+    color: #1b306d;
+}
+.nav-link, .nav-link svg {
+    color: #1b306d;
+    fill: #1b306d;
+    font-weight: bold;
+}
+.nav-link:hover, .nav-link:hover svg {
+    color: bisque;
+    fill: bisque;
+}
+footer {
+    background: linear-gradient(to left, rgba(252, 169, 29, 0) 0%, rgba(252, 169, 29, 1) 100%);
+    padding: 0 10px 0 10px;
+}
+/*--------------------------------------*/
+/*INDEX*/
+.form-container {
+    justify-content: center; /* Horizontálne centrovanie */
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to left, rgba(252, 169, 29, 0) 0%, rgba(252, 169, 29, 1) 100%);
+    border-radius: 50px;
+}
+.btn {
+    background-color: var(--main-color);
+    border: none;
+}
+.btn:hover {
+    background-color: darkgoldenrod;
+}
+/*--------------------------------------*/
+/*TABULKA*/
+.tabulka-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+.table {
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.table th{
+   background-color: var(--main-color);
+}
+/*--------------------------------------*/
+/*ABOUT*/
+.about-container{
+    width: 70%;
+    margin: 0 auto;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+.text-about{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.image-about {
+    display: block; /* Zobraziť obrázok ako blokový prvok */
+    margin: 20px auto; /* Centrovanie obrázka s vertikálnym priestorom */
+    max-width: 80%; /* Obrázok nebude širší ako kontajner */
+    height: auto; /* Zachovanie pomeru strán */
+}
